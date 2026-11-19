@@ -83,7 +83,9 @@ CSS 自訂屬性定義於 `:root`。另有直接寫在元件上的輔助色，�
 - `.text-link` 紅深色粗體、底線邊框、內含箭頭字元。它是普通錨點，不執行 JS。
 - 首頁特色 `.feature-card` 白底、1px `--line` 邊框、padding 28px、min-height 250px、淡陰影；hover 上移 5px 並加深陰影。卡片內有序號、48×48px 色塊符號、標題與正文。≤780px 卡片單欄並取消固定最小高度。
 - About 品牌堅持 `.value-item` 白底紅色 2px 上框、padding 24px；contact 聯絡列以水平分隔線和圖示色塊呈現。三者為不同內容元件，非單一共用卡片元件。
-- 首頁使用實際 `<img>`：`assets/images/yuji.jfif`，alt 為「咒術回戰角色虎杖悠仁主題插畫」。其他視覺由 CSS 繪製，使用帶 `role="img"` 和 `aria-label` 的容器，不引用額外圖片檔。
+- 首頁使用實際 `<img>`：`assets/images/yuji.jfif`，alt 為「咒術回戰角色虎杖悠仁主題插畫」。關於頁故事與空間區的視覺由 CSS 繪製，容器帶 `role="img"` 和 `aria-label`，本身沒有 `img src`。
+- 目前資產目錄另有 `assets/images/images.jfif`、`assets/images/images (1).jfif`，但三頁 HTML 都沒有引用；頁面根目錄也有 `images.jfif`、`images (1).jfif` 複本，均未被頁面引用。唯一目前被 HTML 載入的圖片仍是首頁 `assets/images/yuji.jfif`。
+- `about.html` 的 `</html>` 後面還有一段左欄圖片需求文字，提到 `images(1).jfif`、`<img>`、400×300px；它不是有效的圖片設定，沒有圖片 `src` 或替代文字。詳見 [about.md](about.md)。
 
 ## 共用互動與無障礙
 
@@ -122,6 +124,8 @@ CSS 自訂屬性定義於 `:root`。另有直接寫在元件上的輔助色，�
 | 關於頁成立起點 | 寫成「從喜愛故事與角色開始」；成立時間註明待提供 | 不是經核實的成立史，請提供正式資料 |
 | 關於頁三項品牌堅持 | 尊重故事、用心挑選、真誠交流 | 依大綱撰寫的示範理念，尚待確認 |
 | 環境介紹需圖片搭配文字 | 文字搭配 CSS 幾何空間示意，沒有實景照片 | 圖示不是實際店面照片；有場地照片可再替換 |
+| 關於頁左欄圖片補充文字 | bout.html 的結尾在 </html> 後有一段提到 images(1).jfif、<img>、400×300px 的文字；HTML 裡沒有設定圖片 src/lt，頁面也沒有真正顯示該圖 | 這段看起來像待執行的圖片需求，與目前 CSS 抽象故事圖並存；需確認要保留說明還是完成圖片置換 |
 | 聯絡資料待補；有資料才加地圖/撥號/寄信 | 地址、電話、Email、營業時間均是待補；沒有外部聯絡連結或表單 | 符合 sitemap 規則；實際資料尚未完成 |
 | 共用 slogan | 「讓 GOJO，陪你一起戰鬥。」 | 與最新 sitemap 一致 |
 | 頁尾版權年 | 顯示 2026 | sitemap 未指定年度，請確認是否使用固定年份 |
+
