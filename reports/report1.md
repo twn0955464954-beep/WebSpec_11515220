@@ -1,7 +1,7 @@
 # 書面報告(20%)
-- 學號：
-- 姓名：
-- 信箱：
+- 學號：11515220
+- 姓名：呂宛芯
+- 信箱：twn0955464954@gmail.com
 
 ## 內容規範
 1. 書面報告繳交至 GitHub Repo /WebSpec_學號/reports/report1.md
